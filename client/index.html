@@ -3,27 +3,21 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="foundation/js/foundation.min.js"></script>
     <link href="foundation/css/foundation.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
     <script src="code.js"></script>
 </head>
 
 <body>
 
 <h1>Open Jobs</h1>
+<h3 class="subheader">Certifying that job adverts can be reused</h3>
+<hr>
 
-<h2>Find out if a job advert is easy to reuse</h2>
+<h2>Paste in the web address of a job advert or job listings page</h2>
 
 <form>
-  <div class="row">
-    <div class="large-12 columns">
-      <p>
-        <label>Paste in the web address of a job advert</label>
-      </p>
-      <input id="url" type="text" placeholder="http://" value="http://www.reed.co.uk/jobs/regulatory-affairs-manager-cosmetics/28119791#/jobs/boots/p32344"/>
-    </div>
-  </div>
-  <div class="large-12 columns">
-      <a id="go" href="#" class="button">Certify the job advert</a>
-  </div>
+      <input id="url" type="text" placeholder="http://" />
+      <a id="go" href="#" class="button large">Certify the job advert</a>
 </form>
 
 <h1 id="passed" style="display: none">
@@ -47,27 +41,24 @@
 
 <h2>About this site</h2>
 
-<p>Having lots of jobs on one website, and making it easy to search
-them is really important. So are alerts, to you can get notified on 
-your phone when there is a new job.
-</p>
+<p>Job hunters want great services to find jobs - ones that
+list every job there is, with accurate up to date details, and
+alerts when new ones appear.</p>
 
-<p>Unfortunately, employers and jobs sites publish very low quality
-job adverts. Salaries, geographical location, skills needed are 
-unclear and inconsistent.</p>
+<p>Unfortunately, this isn't possible because employers and job sites publish
+very low quality job adverts. Salaries, geographical location, skills needed
+are unclear and inconsistent. They can't be easily reused by other sites
+and apps.</p>
 
 <p>There is an international standard (called <a href="https://schema.org/JobPosting">
   schema.org JobPosting</a>) for publishing job adverts with proper
-data. This site can check a jobs website to see if it is using that
-standard.
+data. Open Jobs checks a jobs website to see if it is using that standard. We
+award Gold, Silver and Bronze grades to sites which pass.
 </p>
 
 <h2>To do</h2>
 <ul>
-    <li>Decide on image cert format
-    <li>Error handling - e.g. not a URL
-    <li>Remove default
-    <li>Nice theme
+    <li>Put in cert images
     <li>Publish to public URL
     <li>Press return
 </ul>
@@ -75,5 +66,3 @@ standard.
 </body>
 
 </html>
-
-
