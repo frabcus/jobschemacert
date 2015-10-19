@@ -8,7 +8,9 @@
 
 <body>
 
-<h1>Find out if a job advert is easy to reuse</h1>
+<h1>Open Jobs</h1>
+
+<h2>Find out if a job advert is easy to reuse</h2>
 
 <form>
   <div class="row">
@@ -24,9 +26,22 @@
   </div>
 </form>
 
-<h1 id="passed" style="display: none">Passed!</h1>
+<h1 id="passed" style="display: none">
+    <hr>
+    Passed!
+</h1>
 
-<h1 id="failed" style="display: none">Failed!</h1>
+<h1 id="failed" style="display: none">
+    <hr>
+    Failed!
+</h1>
+
+<div id="error" style="display: none">
+  <hr>
+  <div data-alert class="alert-box alert">
+      Failed to load page, please check the web address is correct.
+  </div>
+</div>
 
 <hr>
 
@@ -54,6 +69,7 @@ standard.
     <li>Remove default
     <li>Nice theme
     <li>Publish to public URL
+    <li>Press return
 </ul>
 
 </body>
