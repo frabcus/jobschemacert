@@ -62,11 +62,5 @@ def home(path):
     return send_from_directory(os.path.abspath('client/'), path)
 
 
-
-@app.route('/<path:path>')
-def home(path):
-    return send_from_directory(os.path.abspath('client/'), path)
-
-
 if __name__ == "__main__":
     app.run(debug=True)
