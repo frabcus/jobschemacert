@@ -1,5 +1,7 @@
 import json
 
+from flask.ext.cors import CORS
+from flask.ext.api import renderers
 from flask.ext.api import FlaskAPI
 from flask import request
 
@@ -7,6 +9,12 @@ import requests
 from bs4 import BeautifulSoup
 
 app = FlaskAPI(__name__)
+CORS(app)
+
+class CORSRenderer(renderers.JSONRenderer):
+    def render(self, data, media_type, **options):
+        options['headers'].append('')
+        return super().render(data, media_type, **options)
 
 
 def validate_jobposting(url):
