@@ -8,30 +8,47 @@
 
 <body>
 
-<h1>schema.org JobPosting validator</h1>
-
+<h1>Find out if a job advert is easy to reuse</h1>
 
 <form>
   <div class="row">
     <div class="large-12 columns">
-      <label>Paste in the web address of a job advert, e.g. http://www.reed.co.uk/jobs/regulatory-affairs-manager-cosmetics/28119791#/jobs/boots/p32344
-        <input id="url" type="text" placeholder="http://" value="http://www.reed.co.uk/jobs/regulatory-affairs-manager-cosmetics/28119791#/jobs/boots/p32344"/>
-      </label>
+      <p>
+        <label>Paste in the web address of a job advert</label>
+      </p>
+      <input id="url" type="text" placeholder="http://" value="http://www.reed.co.uk/jobs/regulatory-affairs-manager-cosmetics/28119791#/jobs/boots/p32344"/>
     </div>
   </div>
   <div class="large-12 columns">
-      <a id="go" href="#" class="button">Test the job advert</a>
+      <a id="go" href="#" class="button">Certify the job advert</a>
   </div>
 </form>
 
 <hr>
 
-<h1>To do</h1>
+<h2>About this site</h2>
+
+<p>Having lots of jobs on one website, and making it easy to search
+them is really important. So are alerts, to you can get notified on 
+your phone when there is a new job.
+</p>
+
+<p>Unfortunately, employers and jobs sites publish very low quality
+job adverts. Salaries, geographical location, skills needed are 
+unclear and inconsistent.</p>
+
+<p>There is an international standard (called <a href="https://schema.org/JobPosting">
+  schema.org JobPosting</a>) for publishing job adverts with proper
+data. This site can check a jobs website to see if it is using that
+standard.
+</p>
+
+<h2>To do</h2>
 <ul>
-    <li>Clearer headline of what user is meant to do
-    <li>Better name
+    <li>Decide on image cert format
     <li>Error handling - e.g. not a URL
     <li>Remove default
+    <li>Nice theme
 </ul>
 
 </body>
