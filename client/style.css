@@ -7,3 +7,7 @@ body {
 .subheader {
     margin-top: -10px;
 }
+
+.medal {
+    width: 280px;
+}
