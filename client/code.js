@@ -1,7 +1,7 @@
 // jobschemacheck
 
 $(function() {
-    $("#go").click(function() {
+    var doit = function() {
         $('#go').attr('disabled','disabled').text("Loading...")
         var url = $("#url").val()
         var certify_url = "https://jobschemacert.herokuapp.com/validate/?url=" + encodeURIComponent(url)
@@ -22,8 +22,15 @@ $(function() {
             $("#failed").hide()
             $("#passed").hide()
             $("#error").show()
-        })
-    })
+        });
+    }
+
+    $("#go").click(doit)
+    $("#url").keyup(function (e) {
+        if (e.keyCode == 13) {
+            doit();
+        }
+    });
 
 });
 
