@@ -1,3 +1,5 @@
-    <li>Publish to public URL
-    <li>Press return
-    <li>API docs
+Publish to public URL
+
+Press return
+API docs link
+
