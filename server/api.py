@@ -42,7 +42,7 @@ def validate_jobposting(url):
         'type' : 'application/ld+json',
     })
     for ld in ld_jsons:
-        ld_json = json.loads(ld)
+        ld_json = json.loads(ld.string)
         job_posting_found.append(ld_json.get("@type", '') == "JobPosting")
 
     return any(job_posting_found)
