@@ -19,7 +19,7 @@ class CORSRenderer(renderers.JSONRenderer):
 
 
 def validate_jobposting(url):
-    content = requests.get(url).content
+    content = requests.get(url, verify=False).content
     soup = BeautifulSoup(content)
 
     # Look for any of the 3 types of JobPosting markups
